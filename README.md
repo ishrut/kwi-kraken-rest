@@ -18,7 +18,7 @@ Add the crate to your Cargo.toml: `cargo add kwi-kraken-rest`
 ### Public endpoints
 Example getting a public endpoint data.
 ```rust
-    use kraken_rest::market_data::Ohlc;
+    use kwi_kraken_rest::market_data::Ohlc;
     let ohlc_data = Ohlc::get("SOLEUR", Some(1), None).await.unwrap();
     println!("ohlc data: {:#?}", ohlc);
 ```
@@ -33,7 +33,7 @@ e.g Linux
 ```
 
 ```rust
-    use kraken_rest::account_data::AccountBalance;
+    use kwi_kraken_rest::account_data::AccountBalance;
     let balance = AccountBalance::get().unwrap();
     println!("Account balance: {:#?}", balance);
 ```
