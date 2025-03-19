@@ -1,6 +1,19 @@
 //! kraken-rest library
 //!
 //! This library contains convenient functions to send requests to kraken REST API and deserialises the response.
+//! The submodules are organised in a similar fashion as the official documentation at: https://docs.kraken.com/api/
+//!
+//! # Example
+//!
+//! ```
+//!    use kwi_kraken_rest::market_data::Ohlc;
+//!
+//!    #[tokio::main]
+//!    async fn main() {
+//!        let ohlc_data = Ohlc::get("SOLEUR", Some(1), None).await.unwrap();
+//!        println!("ohlc data: {:#?}", ohlc);
+//!    }
+//! ```
 mod error;
 
 pub mod account_data;

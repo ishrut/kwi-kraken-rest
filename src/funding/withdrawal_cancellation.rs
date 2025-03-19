@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct for withdrawal cancellation
 #[derive(Debug, Deserialize, Serialize)]
 pub struct WithdrawalCancellation;
 

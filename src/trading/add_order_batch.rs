@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to batch add order
 #[derive(Debug, Deserialize, Serialize)]
 pub struct AddOrderBatch {
     pub txid: String,
@@ -7,6 +8,7 @@ pub struct AddOrderBatch {
     pub close: Option<String>,
 }
 
+/// AddOrderBatch inner field
 #[derive(Debug, Deserialize, Serialize)]
 pub struct AddOrderBatchDescr {
     pub order: String,

@@ -1,36 +1,41 @@
 use super::*;
 
+/// struct to list earn allocations
 #[derive(Debug, Deserialize, Serialize)]
 pub struct ListEarnAllocations {
-    converted_asset: String,
-    total_allocated: String,
-    total_rewarded: String,
-    next_cursor: String,
-    items: Vec<EarnAllocationsItems>,
+    pub converted_asset: String,
+    pub total_allocated: String,
+    pub total_rewarded: String,
+    pub next_cursor: String,
+    pub items: Vec<EarnAllocationsItems>,
 }
 
+/// ListEarnAllocation inner field
 #[derive(Debug, Deserialize, Serialize)]
 pub struct EarnAllocationsItems {
-    strategy_id: String,
-    native_asset: String,
-    amount_allocated: EarnAllocationsAmount,
+    pub strategy_id: String,
+    pub native_asset: String,
+    pub amount_allocated: EarnAllocationsAmount,
 }
 
+/// EarnAllocationsItems inner field
 #[derive(Debug, Deserialize, Serialize)]
 pub struct EarnAllocationsAmount {
-    bonding: EarnAllocationsBonding,
-    total: EarnAllocationAllocated,
-    total_rewarded: EarnAllocationAllocated,
+    pub bonding: EarnAllocationsBonding,
+    pub total: EarnAllocationAllocated,
+    pub total_rewarded: EarnAllocationAllocated,
 }
 
+/// EarnAllocationsAmount inner field
 #[derive(Debug, Deserialize, Serialize)]
 pub struct EarnAllocationsBonding {
-    native: String,
-    converted: String,
-    allocation_count: usize,
-    allocations: Vec<AllocationsList>,
+    pub native: String,
+    pub converted: String,
+    pub allocation_count: usize,
+    pub allocations: Vec<AllocationsList>,
 }
 
+/// EarnAllocationsBonding inner field
 #[derive(Debug, Deserialize, Serialize)]
 pub struct AllocationsList {
     created_at: String,
@@ -39,6 +44,7 @@ pub struct AllocationsList {
     converted: String,
 }
 
+/// EarnAllocationsAmount inner field
 #[derive(Debug, Deserialize, Serialize)]
 pub struct EarnAllocationAllocated {
     native: String,

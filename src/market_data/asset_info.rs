@@ -1,6 +1,7 @@
 use super::*;
 use std::collections::HashMap;
 
+/// AssetInfo inner field
 #[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AssetInfoDescr {
     pub aclass: String,
@@ -11,6 +12,7 @@ pub struct AssetInfoDescr {
     pub status: String,
 }
 
+/// struct to get asset info
 #[derive(Debug, Serialize, Deserialize)]
 pub struct AssetInfo {
     #[serde(flatten)]

@@ -1,6 +1,7 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to get tradable asset pairs
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TradableAssetPairs {
     pub aclass_base: Option<String>,
@@ -33,6 +34,7 @@ impl TradableAssetPairs {
     /// Creates a request for tradable asset pairs and returns a struct containing the data.
     ///
     /// # Parametres
+    ///
     /// * `pair` - Asset pairs to get data for, e.g ETH/BTC
     /// * `info` - is an Option and can be: "info"(default), "leverage", "fees", "margin"
     pub async fn get(

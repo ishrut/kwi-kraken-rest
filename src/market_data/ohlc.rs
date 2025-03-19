@@ -1,6 +1,7 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to get ohlc
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Ohlc {
     pub last: u32,
@@ -8,6 +9,7 @@ pub struct Ohlc {
     pub ohlcvt: HashMap<String, Vec<Ohlcvt>>,
 }
 
+/// Ohlc inner field
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Ohlcvt {
     #[serde(rename = "0")]

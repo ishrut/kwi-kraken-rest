@@ -1,6 +1,7 @@
 use super::*;
 use std::collections::HashMap;
 
+/// RecentSpreads inner field
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RecentSpreadsData {
     #[serde(rename = "0")]
@@ -11,6 +12,7 @@ pub struct RecentSpreadsData {
     pub ask: String,
 }
 
+/// struct to get recent spreads
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RecentSpreads {
     #[serde(rename = "last")]

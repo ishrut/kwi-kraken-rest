@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to allocate earn funds
 #[derive(Debug, Deserialize, Serialize)]
 pub struct AllocateEarnFunds;
 

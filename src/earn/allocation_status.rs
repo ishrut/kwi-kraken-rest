@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to get allocation status
 #[derive(Debug, Deserialize, Serialize)]
 pub struct AllocationStatus {
     pub pending: bool,

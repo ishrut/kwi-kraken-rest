@@ -1,12 +1,14 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to get order book
 #[derive(Debug, Serialize, Deserialize)]
 pub struct OrderBook {
     pub asks: Vec<OrderBookData>,
     pub bids: Vec<OrderBookData>,
 }
 
+/// OrderBook inner field
 #[derive(Debug, Serialize, Deserialize)]
 pub struct OrderBookData {
     #[serde(rename = "0")]

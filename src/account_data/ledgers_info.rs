@@ -1,12 +1,14 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to get ledgers info
 #[derive(Debug, Serialize, Deserialize)]
 pub struct LedgersInfo {
     pub count: u32,
     pub ledger: HashMap<String, LedgersInfoData>,
 }
 
+/// LedgersInfo inner field
 #[derive(Debug, Serialize, Deserialize)]
 pub struct LedgersInfoData {
     pub aclass: String,

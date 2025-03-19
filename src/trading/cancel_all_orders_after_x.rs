@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to cancel all orders after x
 #[derive(Debug, Deserialize, Serialize)]
 pub struct CancelAllOrdersAfter {
     #[serde(rename = "currentTime")]

@@ -2,6 +2,7 @@ use std::collections::HashMap;
 
 use super::*;
 
+/// struct to get trades info
 #[derive(Debug, Deserialize, Serialize)]
 pub struct TradesInfo {
     pub ordertxid: String,

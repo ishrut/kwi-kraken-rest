@@ -1,6 +1,7 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to get extended balance
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ExtendedBalance {
     pub balance: String,

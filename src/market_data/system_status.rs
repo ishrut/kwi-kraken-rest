@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to get system status
 #[derive(Debug, Serialize, Deserialize)]
 pub struct SystemStatus {
     pub status: String,

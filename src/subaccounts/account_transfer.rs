@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct for account transfer
 #[derive(Debug, Deserialize, Serialize)]
 pub struct AccountTransfer {
     pub transfer_id: String,

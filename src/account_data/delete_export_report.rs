@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to request delete export report
 #[derive(Debug, Deserialize, Serialize)]
 pub struct DeleteExportReport {
     pub delete: bool,

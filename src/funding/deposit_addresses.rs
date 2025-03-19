@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to get deposit addresses
 #[derive(Debug, Deserialize)]
 pub struct DepositAddresses {
     pub address: String,
@@ -9,10 +10,12 @@ pub struct DepositAddresses {
 }
 
 impl DepositAddresses {
-    /// asset: Asset being deposited
-    /// method: Name of the deposit method
-    /// new: Whether or not to generate a new address
-    /// amount: Amount you wish to deposit (only required for method=Bitcoin Lightning)
+    /// # Parametres
+    ///
+    /// * `asset` - Asset being deposited
+    /// * `method` - Name of the deposit method
+    /// * `new` - Whether or not to generate a new address
+    /// * `amount` - Amount you wish to deposit (only required for method=Bitcoin Lightning)
     pub async fn get(
         asset: &str,
         method: &str,

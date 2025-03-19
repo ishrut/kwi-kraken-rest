@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to deallocate earn funds
 #[derive(Debug)]
 pub struct DeallocateEarnFunds;
 

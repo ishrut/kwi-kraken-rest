@@ -1,6 +1,7 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to request trade volume
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TradeVolume {
     pub currency: String,
@@ -9,6 +10,7 @@ pub struct TradeVolume {
     pub fees_maker: Option<HashMap<String, TradeVolumeFeesMaker>>,
 }
 
+/// TradeVolume inner field
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TradeVolumeFees {
     pub fee: String,
@@ -19,6 +21,7 @@ pub struct TradeVolumeFees {
     pub tiervolume: String,
 }
 
+/// TradeVolume inner field
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TradeVolumeFeesMaker {
     pub fee: String,

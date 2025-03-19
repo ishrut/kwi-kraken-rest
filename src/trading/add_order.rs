@@ -1,11 +1,13 @@
 use super::*;
 
+/// struct to add orders
 #[derive(Debug, Deserialize)]
 pub struct AddOrder {
     pub txid: Vec<String>,
     pub descr: AddOrderDescr,
 }
 
+/// AddOrder inner field
 #[derive(Debug, Deserialize)]
 pub struct AddOrderDescr {
     pub order: String,

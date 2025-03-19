@@ -1,6 +1,7 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to get ticker info
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TickerInfo {
     pub a: Vec<String>,

@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to edit order
 #[derive(Debug, Deserialize)]
 pub struct EditOrder {
     pub descr: EditOrderDescr,
@@ -12,6 +13,7 @@ pub struct EditOrder {
     pub volume: String,
 }
 
+/// EditOrder inner field
 #[derive(Debug, Deserialize)]
 pub struct EditOrderDescr {
     pub order: String,

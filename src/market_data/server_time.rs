@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to get server time
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ServerTime {
     pub unixtime: i32,

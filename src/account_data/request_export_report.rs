@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to request export report
 #[derive(Debug, Deserialize, Serialize)]
 pub struct RequestExportReport {
     pub id: String,

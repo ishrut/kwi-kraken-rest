@@ -1,6 +1,7 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to get orders info
 #[derive(Debug, Deserialize)]
 pub struct OrdersInfo {
     pub closetm: Option<f64>,
@@ -28,6 +29,7 @@ pub struct OrdersInfo {
     pub trades: Option<Vec<String>>,
 }
 
+/// OrdersInfo inner field
 #[derive(Debug, Deserialize)]
 pub struct OrdersInfoDescr {
     pub close: String,

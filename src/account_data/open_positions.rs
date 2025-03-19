@@ -1,6 +1,7 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to get OpenPositions
 #[derive(Debug, Deserialize, Serialize)]
 pub struct OpenPositions {
     pub ordertxid: String,

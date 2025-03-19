@@ -1,6 +1,6 @@
 [package]
 name = "kwi-kraken-rest"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 repository = "https://github.com/ishrut/kwi-kraken-rest"
 description = "Unofficial kraken trading platform REST API implementation"

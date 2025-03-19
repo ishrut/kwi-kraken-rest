@@ -1,11 +1,13 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to get open orders
 #[derive(Debug, Deserialize)]
 pub struct OpenOrders {
     pub open: HashMap<String, OpenOrdersData>,
 }
 
+/// OpenOrders inner field
 #[derive(Debug, Deserialize, Clone)]
 pub struct OpenOrdersData {
     pub refid: Option<String>,
@@ -27,6 +29,7 @@ pub struct OpenOrdersData {
     pub oflags: String,
 }
 
+/// OpenOrdersData inner field
 #[derive(Debug, Deserialize, Clone)]
 pub struct OpenOrdersDescription {
     pub pair: String,

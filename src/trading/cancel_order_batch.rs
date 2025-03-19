@@ -1,8 +1,9 @@
 use super::*;
 
+/// struct to cancel order batch
 #[derive(Debug, Deserialize, Serialize)]
 pub struct CancelOrderBatch {
-    count: usize,
+    pub count: usize,
 }
 
 impl CancelOrderBatch {

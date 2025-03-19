@@ -1,4 +1,6 @@
 use super::*;
+
+/// struct to create subaccount
 pub struct CreateSubaccount;
 
 impl CreateSubaccount {

@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to cancel order
 #[derive(Debug, Deserialize)]
 pub struct CancelOrder {
     pub count: usize,

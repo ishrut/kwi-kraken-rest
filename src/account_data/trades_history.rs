@@ -1,12 +1,14 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to get trades history
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TradesHistory {
     pub count: u32,
     pub trades: HashMap<String, TradesHistoryFields>,
 }
 
+/// TradesHistory inner field
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TradesHistoryFields {
     pub cost: String,

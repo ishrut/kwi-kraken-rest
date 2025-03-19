@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to get export report status
 #[derive(Debug, Deserialize, Serialize)]
 pub struct ExportReportStatus {
     pub id: String,

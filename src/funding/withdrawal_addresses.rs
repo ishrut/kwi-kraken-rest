@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to get withdrawal addresses
 #[derive(Debug, Deserialize, Serialize)]
 pub struct WithdrawalAddresses {
     pub address: String,

@@ -1,18 +1,19 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to query ledgers
 #[derive(Debug, Serialize, Deserialize)]
 pub struct QueryLedgers {
-    refid: String,
-    time: f64,
+    pub refid: String,
+    pub time: f64,
     #[serde(rename = "type")]
-    ledger_type: String,
-    subtype: String,
-    aclass: String,
-    asset: String,
-    amount: String,
-    fee: String,
-    balance: String,
+    pub ledger_type: String,
+    pub subtype: String,
+    pub aclass: String,
+    pub asset: String,
+    pub amount: String,
+    pub fee: String,
+    pub balance: String,
 }
 
 impl QueryLedgers {

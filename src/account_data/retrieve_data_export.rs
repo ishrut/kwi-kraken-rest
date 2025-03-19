@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to retrieve data export
 #[derive(Debug, Deserialize, Serialize)]
 pub struct RetrieveDataExport {
     //actually a binary

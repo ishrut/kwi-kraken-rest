@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to amend order
 #[derive(Debug, Deserialize)]
 pub struct AmendOrder {
     pub amend_id: String,

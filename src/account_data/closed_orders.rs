@@ -1,12 +1,14 @@
 use super::*;
 use std::collections::HashMap;
 
+/// struct to get closed orders
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ClosedOrders {
     pub closed: HashMap<String, ClosedOrdersData>,
     pub count: u32,
 }
 
+/// ClosedOrders inner field
 #[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct ClosedOrdersData {
     pub closetm: Option<f64>,
@@ -30,6 +32,7 @@ pub struct ClosedOrdersData {
     pub vol_exec: String,
 }
 
+/// ClosedOrdersData inner field
 #[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct ClosedOrdersDescr {
     pub close: String,

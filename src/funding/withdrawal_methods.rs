@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to get withdrawal methods
 #[derive(Debug, Deserialize, Serialize)]
 pub struct WithdrawalMethods {
     pub asset: String,
@@ -10,9 +11,11 @@ pub struct WithdrawalMethods {
 
 impl WithdrawalMethods {
     /// Warning! untested
-    /// asset: Filter methods for specific asset
-    /// aclass: Default value: currency, Filter methods for specific asset class
-    /// network: Filter methods for specific network
+    /// # Arguments
+    ///
+    /// * `asset` - Filter methods for specific asset
+    /// * `aclass` - Default value: currency, Filter methods for specific asset class
+    /// * `network` - Filter methods for specific network
     pub async fn get(
         asset: Option<&str>,
         aclass: Option<&str>,

@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to get deallocation status
 #[derive(Debug, Deserialize, Serialize)]
 pub struct DeallocationStatus {
     pending: bool,

@@ -1,6 +1,7 @@
 use super::*;
 use std::collections::HashMap;
 
+/// RecentTrades inner field
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RecentTradesFields {
     #[serde(rename = "0")]
@@ -19,6 +20,7 @@ pub struct RecentTradesFields {
     pub trade_id: u32,
 }
 
+/// struct to get recent trades
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RecentTrades {
     #[serde(rename = "last")]

@@ -1,11 +1,13 @@
 use super::*;
 
+/// struct to get order amends
 #[derive(Debug, Deserialize, Serialize)]
 pub struct OrderAmends {
     pub amends: Vec<OrderAmendsData>,
     pub count: usize,
 }
 
+/// OrderAmends inner field
 #[derive(Debug, Deserialize, Serialize)]
 pub struct OrderAmendsData {
     pub amend_id: String,

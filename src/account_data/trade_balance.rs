@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to request trade balance
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TradeBalance {
     pub eb: String,

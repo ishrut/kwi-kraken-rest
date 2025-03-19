@@ -1,5 +1,6 @@
 use super::*;
 
+/// struct to get token
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Token {
     pub token: String,

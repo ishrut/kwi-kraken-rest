@@ -1,9 +1,10 @@
 use super::*;
 
+/// struct to cancel all orders
 #[derive(Debug, Deserialize, Serialize)]
 pub struct CancelAllOrders {
-    count: usize,
-    pending: Option<bool>,
+    pub count: usize,
+    pub pending: Option<bool>,
 }
 
 impl CancelAllOrders {

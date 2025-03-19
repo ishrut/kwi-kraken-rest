@@ -1,11 +1,13 @@
 use super::*;
 
+/// struct to get recent deposit status
 #[derive(Debug, Deserialize, Serialize)]
 pub struct RecentDepositsStatus {
     pub deposit: Deposit,
     pub next_cursor: String,
 }
 
+/// RecentDepositsStatus inner field
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Deposit {
     pub method: String,
