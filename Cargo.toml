@@ -2,7 +2,7 @@
 name = "kwi-kraken-rest"
 version = "0.1.0"
 edition = "2024"
-repository = ""
+repository = "https://github.com/ishrut/kwi-kraken-rest"
 description = "Unofficial kraken trading platform REST API implementation"
 license = "MIT"
 keywords = ["rest", "kraken", "trading", "api"]
