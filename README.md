@@ -1,4 +1,4 @@
-# kraken-rest
+# kwi-kraken-rest
 This crate contains a collection of structs to deserialize json responses from the kraken trading platform. It also contains convenient functions to send HTTP requests. HTTP requests use the reqwest crate. Deserialisation is handled by the serde crate. The libraries are organised in a similar way as the official API documentation at https://docs.kraken.com/api/.
 
 ## Disclaimer
@@ -13,7 +13,7 @@ This library is as of yet incomplete. Some functions have never been tested and 
 - Private endpoints
 
 ## Usage
-Add the crate to your Cargo.toml: `cargo add kraken-rest`
+Add the crate to your Cargo.toml: `cargo add kwi-kraken-rest`
 
 ### Public endpoints
 Example getting a public endpoint data.
